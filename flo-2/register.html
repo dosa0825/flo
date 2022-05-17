@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <div id="wrap">
+        <header id="header"> 
+            <div class="header_in">
+                <nav class="gnb">
+                    <h1 class="logo"><a href="./main.html">F L O</a></h1>
+                    <ul class="menu1">
+                        <li><a href="#">FLO 소개</a></li>
+                        <li><a href="#">둘러보기</a></li>
+                        <li><a href="#">보관함</a></li>
+                        <li><a href="#">이용권</a></li>
+                    </ul>
+                    <fieldset class="sc">
+                        <input class="search" type="search" placeholder="검색어를 입력하세요">
+                        <!-- <input class="submit" type="submit" value="검색"> -->
+                    </fieldset>
+                    <div class="sc_more">
+                        <p class="sc_more_title">급상승 키워드</p>
+                        <ul>
+                            <li><a href="#">
+                                <p>1<span>싸이</span></p>
+                            </a></li>
+                            <li><a href="#">
+                                <p>2<span>우리들의 블루스 OST</span></p>
+                            </a></li>
+                            <li><a href="#">
+                                <p>3<span>볼빨간사춘기</span></p>
+                            </a></li>
+                            <li><a href="#">
+                                <p>4<span>아이유</span></p>
+                            </a></li>
+                            <li><a href="#">
+                                <p>5<span>빅뱅</span></p>
+                            </a></li>
+                            <li><a href="#">
+                                <p>6<span>제시</span></p>
+                            </a></li>
+                            <li><a href="#">
+                                <p>7<span>태연</span></p>
+                            </a></li>
+                            <li><a href="#">
+                                <p>8<span>방탄소년단</span></p>
+                            </a></li>
+                            <li><a href="#">
+                                <p>9<span>임영웅</span></p>
+                            </a></li>
+                            <li><a href="#">
+                                <p>10<span>에스파</span></p>
+                            </a></li>
+                        </ul>
+                        <div class="close">
+                            <p><a href="">
+                                X
+                            </a></p>
+                        </div>
+                    </div>
+                    <ul class="util">
+                        <li><a href="./login.html">로그인</a></li>
+                        <li><a href="./register.html">회원가입</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header> <!--#header-->
+
+        <div id="container">
+            <div class="regi">
+                <h1>회원가입</h1>
+                <form action="" name="signUp">
+                        <label for="regiId">
+                            <span>아이디 (이메일)</span>
+                            <input type="text" name="regiId" id="regiId" placeholder="이메일 형식으로 입력하세요" style="font-size: 18px;">
+                        </label>
+                        <label for="emailList" class="emailListMain">
+                            <select name="emailList" id="emailList">
+                                <option value="">--선택--</option>
+                                <option value="">@naver.com</option>
+                                <option value="">@hanmail.net</option>
+                                <option value="">@nate.com</option>
+                                <option value="">@gmail.com</option>
+                            </select>
+                        </label>
+                        <label for="regiPw1">
+                            <span>비밀번호</span>
+                            <input type="password" name="regiPw1" id="regiPw1" placeholder="8자리 이상 / 숫자, 영어, 특수문자 포함" style="font-size: 18px;">
+                            <!-- <div id="passwordError" class="error"></div> -->
+                        </label>
+                        <label for="regiPw2">
+                            <span>비밀번호 확인</span>
+                            <input type="password" name="regiPw2" id="regiPw2" placeholder="비밀번호를 다시 한 번 입력하세요" style="font-size: 18px;">
+                            <!-- <div id="passwordCheckError" class="error"></div> -->
+                        </label>
+                        <label for="regiName">
+                            <span>이름</span>
+                            <input type="text" name="regiName" id="regiName">
+                        </label>
+                        <label for="regiBirth" class="regiBirth">
+                            <span>생년월일</span>
+                            <input type="text" name="regiBirth" id="regiBirth" placeholder="년(4자)" maxlength="4">
+                            <select name="month" id="month">
+                                <option value="">월</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                                <option value="">7</option>
+                                <option value="">8</option>
+                                <option value="">9</option>
+                                <option value="">10</option>
+                                <option value="">11</option>
+                                <option value="">12</option>
+                            </select>
+                            <input type="text" name="day" id="day" placeholder="일" maxlength="2">
+                        </label>
+                        <label for="tel">
+                            <span>전화번호</span>
+                            <input type="tel" name="pn" id="pn" placeholder="-없이 숫자만 입력">
+                        </label>
+                        <button type="button" id="regi_sub" style="font-size: 18px;" onclick="signUp_check()">가입하기</button>
+                </form>
+
+            </div> <!--.regi-->
+        </div> <!--#container-->
+
+        <footer id="footer">
+            <div class="f_util">
+                <ul>
+                    <li><a href="">FLO 소개</a></li>
+                    <li><a href="">공지사항</a></li>
+                    <li><a href="">고객센터</a></li>
+                    <li><a href="">이용약관</a></li>
+                    <li class="fus"><a href="">개인정보 처리방침</a></li>
+                    <li><a href="">사업자정보 확인</a></li>
+                </ul>
+                <p>(주)드림어스컴퍼니</p>
+            </div>
+        </footer>
+    </div> <!--#wrap-->
+
+    <script src="./js/regi.js"></script>
+</body>
+</html>

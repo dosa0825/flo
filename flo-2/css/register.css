@@ -1,0 +1,307 @@
+@charset "utf-8";
+
+#wrap{
+    width: 1240px;
+    margin: 0 auto;
+    position: relative;
+    /* background-color: aqua; */
+}
+
+#header{
+    width: 1240px;
+    height: 80px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.header_in{
+    width: 1160px;
+    height: 80px;
+    position: fixed;
+    background-color: rgb(3, 1, 87);
+    padding: 0 40px;
+    z-index: 1000;
+
+}
+
+.gnb{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.logo{
+    width: 80px;
+}
+
+.logo a{
+    font-size: 23px;
+    color: #fff;
+}
+
+.menu1{
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 180px;
+}
+
+.menu1 li{
+    width: 60px;
+    margin: 0 15px 0 15px;
+}
+
+.menu1 li a:hover{
+    color: aquamarine;
+}
+
+.menu1 li a{
+    color: #fff;
+    font-size: 15px;
+}
+
+.sc{
+    position: absolute;
+    top: 20px;
+    left: 600px;
+    width: 280px;
+    height: 32px;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    padding: 0 25px 0 10px;
+    display: flex;
+}
+
+.search{
+    width: 280px;
+    height: 20px;
+    margin-top: 6px;
+    border-radius: 5px;
+    text-align: left;
+    /* outline: none; */
+    border: 0px;
+    padding-right: 25px;
+}
+
+.sc_more{
+    display: none;
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    height: 450px;
+    position: absolute;
+    top: 90px;
+    left: 605px;
+    padding: 35px 0;
+    border: 1px solid rgba(189, 189, 189, 0.7);
+    padding: 10px;
+    z-index: 10000;
+}
+
+.close{
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+}
+
+.close a{
+    display: block;
+    width: 25px;
+    height: 25px;
+    font-size: 18px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.sc_more_title{
+    font-size: 18px;
+    margin-top: 7px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.sc_more li{
+    /* margin-left: 10px; */
+    height: 42px;
+}
+
+.sc_more li:hover{
+    background-color: rgb(232, 231, 231);
+}
+
+.sc_more li p{
+    padding-top: 10px;
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+.sc_more li p span{
+    margin-left: 20px;
+}
+
+.util{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    display: flex;
+}
+
+.util li{
+    margin: 0 15px 0 15px;
+}
+
+.util li a{
+    color: #ccc;
+    font-size: 13px;
+}
+
+/* container */
+
+#container{
+    margin-top: 200px;
+}
+
+.regi{
+    width: 700px;
+    /* height: 400px; */
+    margin: 0 auto;
+    border: 1px solid rgb(203, 201, 201);
+    padding: 40px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.regi h1{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+
+.regi form label{
+    display: flex;
+    justify-content: space-between;
+}
+
+.regi form label span{
+    font-size: 18px;
+    line-height: 60px;
+}
+
+label{
+    display: block;
+}
+
+.emailListMain{
+    position: absolute;
+    top: 160px;
+    right: 30px;
+}
+
+#regiId, #regiPw1, #regiPw2, #pn, #regiName{
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+#regiId{
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    width: 300px;
+    margin-right: 100px;
+}
+
+select{
+    width: 100px;
+    height: 40px;
+    
+}
+
+#regiId{
+    margin-bottom: 30px;
+}
+
+#regiPw1{
+    margin-bottom: 30px;
+}
+
+#regiPw2{
+    margin-bottom: 30px;
+}
+
+#regiName{
+    margin-bottom: 30px;
+}
+
+.regiBirth{
+    margin-bottom: 30px;
+}
+
+#pn{
+    margin-bottom: 70px;
+}
+
+.logUtil{
+    display: flex;
+    justify-content: space-between;
+}
+
+#regi_sub{
+    width: 700px;
+    height: 70px;
+    margin-bottom: 10px;
+    background-color: rgb(44, 41, 197);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#regiBirth, #day{
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+#month{
+    margin-top: 12px;
+}
+
+.f_util{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.f_util ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.f_util ul li::after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background-color: #333;
+    margin: 0 12px 0 12px;
+}
+
+.f_util ul li:last-child::after{
+    display: none;
+}
+
+.f_util li a:hover{
+    color: rgb(88, 166, 255);
+}
+
+.f_util ul li a{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.f_util ul .fus a{
+    font-weight: bold;
+}
+
